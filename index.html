@@ -1,19 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dribbble Page Mockup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="screen.css" rel="stylesheet">
+  <style>
+    .hover-effect {
+      position: relative;
+      display: inline-block;
+    }
+    .hover-effect::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .hover-effect:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex items-center justify-between p-4 border-b bg-gray-100">
+    <div class="flex items-center space-x-4">
+      <select class="border rounded px-2 py-1 text-sm">
+        <option>Popular</option>
+      </select>
+      <button class="font-normal hover:text-blue-500">Discover</button>
+      <button class="hover:text-blue-500">Animation</button>
+      <button class="hover:text-blue-500">Branding</button>
+      <button class="hover:text-blue-500">Illustration</button>
+      <button class="hover:text-blue-500">Mobile</button>
+      <button class="hover:text-blue-500">Print</button>
+    </div>
+    <button class="border rounded px-3 py-1 text-sm hover:bg-blue-500 hover:text-white">Filters</button>
+  </nav>
+
+  <!-- Card Section -->
+  <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <!-- Card -->
+    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="SM.jpg" alt="Siege Media" class="w-full object-cover">
+      <div class="p-3 flex items-center justify-between text-xs text-gray-500">
+        <div class="flex items-center space-x-2">
+          <span class="font-semibold">Siege Media</span>
+          <span class="bg-gray-200 text-xs rounded px-2">TEAM</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span>193</span>
+          <span>67.4k</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="OC.jpg" alt="Orman Clark" class="w-full object-cover">
+      <div class="p-3 flex items-center justify-between text-xs text-gray-400">
+        <span class="font-semibold">Orman Clark</span>
+        <div class="flex items-center space-x-1">
+          <span>98</span>
+          <span>24.2k</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="JC.jpg" alt="Jordon Cheung" class="w-full object-cover">
+      <div class="p-3 flex items-center justify-between text-xs text-gray-500">
+        <span class="font-semibold">Jordon Cheung</span>
+        <div class="flex items-center space-x-1">
+          <span>176</span>
+          <span>57.1k</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="AC.jpg" alt="Aldo Crusher" class="w-full object-cover">
+      <div class="p-3 flex items-center justify-between text-xs text-gray-500">
+        <span class="font-semibold">Aldo Crusher</span>
+        <div class="flex items-center space-x-1">
+          <span>65</span>
+          <span>6.7k</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-orange-500 rounded-lg overflow-hidden hover:bg-orange-400 transition-colors">
+      <img src="C.jpg" alt="Canto" class="w-full object-cover">
+      <div class="p-3 flex flex-col space-y-2 text-white text-xs">
+        <div class="flex items-center justify-between">
+          <span class="font-semibold">Canto</span>
+          <div class="flex items-center space-x-1">
+            <span>Hide ads</span>
+            <span class="text-gray-200">.</span>
+            <span>Advertise</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+      <img src="RW.jpg" alt="Ramy Wafaa" class="w-full object-cover">
+      <div class="p-3 flex items-center justify-between text-xs text-gray-500">
+        <span class="font-semibold">Ramy Wafaa</span>
+        <div class="flex items-center space-x-1">
+          <span>513</span>
+          <span>143k</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
 </html>

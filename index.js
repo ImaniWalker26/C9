@@ -1,1 +1,2 @@
-// Add JavaScript below
+document.addEventListener("DOMContentLoaded", function() {
+  });

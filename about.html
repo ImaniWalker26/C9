@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>About Page</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="screen.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <nav class="flex items-center justify-between p-4 border-b bg-gray-100">
+    <div class="flex items-center space-x-4">
+      <button class="font-semibold hover:text-blue-500">Home</button>
+      <button class="hover:text-blue-500">About</button>
+      <button class="hover:text-blue-500">Contact</button>
+    </div>
+  </nav>
+
+  <section class="p-6">
+    <h1 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h1>
+    <p class="text-lg text-gray-600 mb-4">
+      Welcome to our website! We are a creative team dedicated to producing high-quality, engaging designs. Our work covers a wide range of areas including branding, animation, illustration, and more. We are constantly striving to push the boundaries of design and deliver the best experience to our clients.
+    </p>
+    <p class="text-lg text-gray-600 mb-4">
+      Our team consists of talented individuals who specialize in different fields, from graphic design to digital art. We work together to create visually appealing and effective solutions for our clients.
+    </p>
+  </section>
+
+  <footer class="p-4 bg-gray-100 text-center">
+    <p class="text-gray-500">© 2025 Your Company Name. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
 </html>

@@ -1,4 +1,27 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
-}
+body {
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  nav button:hover {
+    text-decoration: underline;
+  }
+  
+  nav button {
+    transition: color 0.3s ease;
+  }
+  
+  section img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  section img:hover {
+    transform: scale(1.05);
+  }
+  
+  .bg-orange-500 {
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg-orange-500:hover {
+    background-color: #FF7043;
+  }  
